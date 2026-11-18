@@ -31,6 +31,7 @@
   --fish: #8a5b20;
   --ban: #a84225;
   --agent: #85552e;
+  --story: #7b4b28;
   --body: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
   --display: "Ma Shan Zheng", "Noto Serif SC", "Kaiti SC", "STKaiti", serif;
   --max: 1340px;
@@ -422,6 +423,10 @@ html.is-reading {
   --row-bg: #f9efdf;
 }
 
+.article-row--hackathon {
+  --accent: var(--story);
+}
+
 .article-row:hover {
   transform: translateY(-3px);
   border-color: rgba(107, 72, 39, 0.25);
@@ -588,6 +593,10 @@ html.is-reading {
 
 .reader-article--agent {
   --accent: var(--agent);
+}
+
+.reader-article--hackathon {
+  --accent: var(--story);
 }
 
 .reader-article .article-head,
@@ -1313,7 +1322,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-top: 18px;
+  margin-top: 10px;
   padding: 15px 0 20px;
   border-top: 1px solid var(--line-soft);
   color: var(--ink-3);
@@ -1379,7 +1388,7 @@ body.is-reading .site-footer {
 .hero {
   display: block;
   overflow: hidden;
-  padding: 34px 0 26px;
+  padding: 28px 0 22px;
 }
 
 .hero-copy {
@@ -1395,7 +1404,7 @@ body.is-reading .site-footer {
 
 .wordmark-name {
   font-family: var(--display);
-  font-size: clamp(48px, 5.2vw, 76px);
+  font-size: clamp(44px, 4.6vw, 64px);
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: 0;
@@ -1500,7 +1509,7 @@ body.is-reading .site-footer {
   grid-template-columns: 46px minmax(0, 1fr) 148px 58px;
   gap: 18px;
   align-items: center;
-  padding: 20px 4px;
+  padding: 10px 4px;
   border: 0;
   border-top: 1px solid var(--line-soft);
   border-radius: 0;
